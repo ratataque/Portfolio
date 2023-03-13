@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css?family=Audiowide');
+
+#texte_rouge {
+    color: rgb(176, 37, 37);
+}
+#texte_cacher {
+    color: #393f4d;
+}
+#texte_centrer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    box-shadow: 0px 10px 20px #555;
+    margin-top: 20px;
+    background-color: #393f4d;
+    padding: 40px 60px;
+    min-width: 300px;
+    border-radius: 10%;
+    border: 1px solid #EBA937;
+}
+#div_formulaire {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+form h1 {
+    /* color: #ffffff; */
+    font-family: "Audiowide", sans-serif;
+    background-image: linear-gradient(to right, #ffffff, #EBA937);
+    /* text-shadow: 3px 3px 3px #EBA937; */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+}
+
+form .social-media {
+    margin-top: -10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+form .social-media p {
+    padding: 5px;
+    width: 20px;
+    margin-left: 10px;
+    border-radius: 100%;
+    border: 1px solid #545454;
+    text-align: center;
+    cursor: pointer;
+    color: #545454;
+}
+
+form p.choose-email {
+    color: #ffffff;
+    text-align: center;
+}
+
+form .inputs {
+    display: flex;
+    flex-direction: column;
+}
+
+form .inputs input[type='email'],
+input[type='password'] {
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    outline: none;
+    margin-bottom: 15px;
+}
+
+form button {
+    padding: 15px 25px;
+    border-radius: 5px;
+    border: none;
+    font-size: 15px;
+    color: #fff;
+    background-color: #EBA937;
+    outline: none;
+    cursor: pointer;
+}
