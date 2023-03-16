@@ -22,29 +22,29 @@ session_start();
 </head>
 
 <body>
-    <a class="vers_about" href="#" onclick="transi('about');">About</a>
-    <a class="vers_projet" href="#" onclick="transi('projet');">Projet</a>
+    <a class="vers_about button" href="#" onclick="transi('about');">About</a>
+    <a class="vers_projet button" href="#" onclick="transi('projet');">Projets</a>
 
     <div class="moi">
         <div class="nom">RIMMELY</div>
         <div class="prenom">Ewan</div>
     </div>
 
-    <a class="vers_centre_interet" href="#" onclick="transi('centre_interet');">Centre D'interet</a>
-    <a class="vers_veille" href="#" onclick="transi('veille');">Veille Technologique</a>
+    <a class="vers_centre_interet button" href="#" onclick="transi('centre_interet');">Centre D'interet</a>
+    <a class="vers_veille button" href="#" onclick="transi('veille');">Veille Technologique</a>
 
 
     <a id="about" class="titre_about">About</a>
-    <a class="about_acceuil" href="#" onclick="transi('acceuil');">Acceuil</a>
+    <a class="about_acceuil button" href="#" onclick="transi('acceuil');">Acceuil</a>
 
-    <a id="projet" class="titre_projet">Projet</a>
-    <a class="projet_acceuil" href="#" onclick="transi('acceuil');">Acceuil</a>
+    <a id="projet" class="titre_projet">Projets</a>
+    <a class="projet_acceuil button" href="#" onclick="transi('acceuil');">Acceuil</a>
 
     <a id="centre_interet" class="titre_centre_interet">Centre D'interet</a>
-    <a class="centre_acceuil" href="#" onclick="transi('acceuil');">Acceuil</a>
+    <a class="centre_acceuil button" href="#" onclick="transi('acceuil');">Acceuil</a>
 
     <a id="veille" class="titre_veille">Veille Technologique</a>
-    <a class="veille_acceuil" href="#" onclick="transi('acceuil');">Acceuil</a>
+    <a class="veille_acceuil button" href="#" onclick="transi('acceuil');">Acceuil</a>
 </body>
 
 </html>

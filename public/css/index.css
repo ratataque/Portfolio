@@ -5,12 +5,20 @@
     src: url("../font/flash/Flash.ttf");
 }
 
+
+
 body {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: "Monsterat", sans-serif;
     padding: 0;
     margin: 0;
     overflow: hidden;
     transition: 0.9s 0.1s cubic-bezier(0.35, 0, 0.07, 1);
+    width: 100vw;
+    height: 100vh;
+    background-image: url("../images/tortue.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 .vers_projet {
@@ -36,7 +44,7 @@ body {
 
 .vers_veille {
     position: absolute;
-    left: 78vw;
+    left: 71vw;
     top: 80vh;
     font-size: xx-large;
 }
@@ -44,28 +52,32 @@ body {
 .titre_about {
     font-size: xx-large;
     left: -95vw;
-    bottom: 92vh;
+    bottom: 188vh;
     position: absolute;
+	font-weight: bold;
+	font-size: 3rem;
 }
 
 .about_acceuil {
     position: absolute;
-    left: -8vw;
-    bottom: 92vh;
+    left: -13vw;
+    bottom: 188vh;
     font-size: xx-large;
 }
 
 .titre_projet {
     font-size: xx-large;
     left: 104vw;
-    bottom: 93vh;
+    bottom: 188vh;
     position: absolute;
+	font-weight: bold;
+	font-size: 3rem;
 }
 
 .projet_acceuil {
     position: absolute;
-    left: 190vw;
-    bottom: 92vh;
+    left: 185vw;
+    bottom: 188vh;
     font-size: xx-large;
 }
 
@@ -74,11 +86,13 @@ body {
     left: -95vw;
     top: 106vh;
     position: absolute;
+	font-weight: bold;
+	font-size: 3rem;
 }
 
 .centre_acceuil {
     position: absolute;
-    left: -8vw;
+    left: -13vw;
     top: 106vh;
     font-size: xx-large;
 }
@@ -88,11 +102,13 @@ body {
     left: 104vw;
     top: 106vh;
     position: absolute;
+	font-weight: bold;
+	font-size: 3rem;
 }
 
 .veille_acceuil {
     position: absolute;
-    left: 190vw;
+    left: 185vw;
     top: 106vh;
     font-size: xx-large;
 }
@@ -118,6 +134,7 @@ body {
 }
 
 .moi {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif !important;
     position: absolute;
     left: 20vw;
     top: 35vh;
@@ -131,5 +148,42 @@ body {
 .prenom {
     font-size: 400%;
     font-weight: 900;
-    color: darkred;
+    color: darkorange;
+}
+
+
+a.button{
+	text-decoration: none;
+	color: darkgray;
+	font-weight: bold;
+	font-size: 3rem;
+	padding: 10px;
+}
+
+
+/* BUTTON EEN */
+
+a.button:before, a.button:after{
+	content: '';
+	position: absolute;
+	width: 15px;
+	height: 15px;
+	transition: all 0.3s ease;
+}
+a.button:before{
+	top: -3px;
+	left: -3px;
+	border-top: 5px solid darkorange;
+	border-left: 5px solid darkorange;	
+}
+a.button:after{
+	bottom: -3px;
+	right: -3px;
+	border-bottom: 5px solid darkorange;
+	border-right: 5px solid darkorange;
+}
+a.button:hover:before, a.button:hover:after{
+	width: 100%;
+	height: 100%;
+	transition: all 0.3s ease;
 }
