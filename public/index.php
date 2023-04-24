@@ -30,6 +30,10 @@ session_start();
         <div class="prenom">Ewan</div>
     </div>
 
+    <img class="tortue" alt="tortue" src="./images/tortue_petite-removebg-preview.png"/>
+
+    <img class="fleche" alt="fleche" src="./images/infini.png" onclick="vers_linfini()"/>
+
     <a class="vers_centre_interet button" href="#" onclick="transi('centre_interet');">Centre D'interet</a>
     <a class="vers_veille button" href="#" onclick="transi('veille');">Veille Technologique</a>
 

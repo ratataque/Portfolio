@@ -15,10 +15,11 @@ body {
     transition: 0.9s 0.1s cubic-bezier(0.35, 0, 0.07, 1);
     width: 100vw;
     height: 100vh;
-    background-image: url("../images/tortue.png");
+    /* background-image: url("../images/tortue.png");
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
+    background-size: cover; */
+    background-color: #efefef;
 }
 
 .vers_projet {
@@ -61,13 +62,13 @@ body {
 .about_acceuil {
     position: absolute;
     left: -13vw;
-    bottom: 188vh;
+    bottom: 108vh;
     font-size: xx-large;
 }
 
 .titre_projet {
     font-size: xx-large;
-    left: 104vw;
+    left: 186vw;
     bottom: 188vh;
     position: absolute;
 	font-weight: bold;
@@ -76,15 +77,15 @@ body {
 
 .projet_acceuil {
     position: absolute;
-    left: 185vw;
-    bottom: 188vh;
+    left: 105vw;
+    bottom: 108vh;
     font-size: xx-large;
 }
 
 .titre_centre_interet {
     font-size: xx-large;
     left: -95vw;
-    top: 106vh;
+    top: 186vh;
     position: absolute;
 	font-weight: bold;
 	font-size: 3rem;
@@ -99,8 +100,8 @@ body {
 
 .titre_veille {
     font-size: xx-large;
-    left: 104vw;
-    top: 106vh;
+    left: 174vw;
+    top: 183vh;
     position: absolute;
 	font-weight: bold;
 	font-size: 3rem;
@@ -108,7 +109,7 @@ body {
 
 .veille_acceuil {
     position: absolute;
-    left: 185vw;
+    left: 105vw;
     top: 106vh;
     font-size: xx-large;
 }
@@ -186,4 +187,54 @@ a.button:hover:before, a.button:hover:after{
 	width: 100%;
 	height: 100%;
 	transition: all 0.3s ease;
+}
+
+.tortue {
+    position: absolute;
+    right: 30vw;
+    top: 23vh;
+    transition: 1.7s 0.3s cubic-bezier(0.35, 0, 0.07, 1);
+}
+
+.tortue_flotte {
+    transition: 1.7s 0.1s cubic-bezier(0.35, 0, 0.07, 1);
+    /* transform: translateY(-3vh); */
+}
+
+.tortue.projet {
+    transition: 1.7s 0.3s cubic-bezier(0.35, 0, 0.07, 1) !important;
+    /* transform: translate(52vw,-115vh) scaleX(-1) scaleX(-1); */
+}
+
+.tortue.about {
+    transition: 1.7s 0.3s cubic-bezier(0.35, 0, 0.07, 1) !important;
+    /* transform: translate(-152vw,-100vh) scaleX(-1) scaleX(-1); */
+}
+
+.tortue.centre_interet {
+    transition: 1.7s 0.3s cubic-bezier(0.35, 0, 0.07, 1) !important;
+    /* transform: translate(-82vw,100vh) scaleX(-1); */
+}
+
+.tortue.veille {
+    transition: 1.7s 0.3s cubic-bezier(0.35, 0, 0.07, 1) !important;
+    /* transform: translate(122vw,100vh) scaleX(-1); */
+}
+
+.tortue.infini {
+    transition: 0.3s 0s cubic-bezier(0.35, 0, 0.07, 1) !important;
+    transform: translateX(100vh) !important;
+}
+.tortue.reset {
+    transition: none;
+    transform: translateX(-160vh) !important;
+}
+
+.fleche {
+    position: absolute;
+    right: 7vw;
+    top: 38vh;
+    width: 8vw;
+    height: auto;
+    cursor: pointer;
 }
