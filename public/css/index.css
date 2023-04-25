@@ -19,6 +19,7 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover; */
+    /* background-color: darkgray; */
     background-color: #efefef;
 }
 
@@ -36,7 +37,7 @@ body {
     font-size: xx-large;
 }
 
-.vers_centre_interet {
+.vers_formation {
     position: absolute;
     left: 8vw;
     top: 80vh;
@@ -47,22 +48,6 @@ body {
     position: absolute;
     left: 71vw;
     top: 80vh;
-    font-size: xx-large;
-}
-
-.titre_about {
-    font-size: xx-large;
-    left: -95vw;
-    bottom: 188vh;
-    position: absolute;
-	font-weight: bold;
-	font-size: 3rem;
-}
-
-.about_acceuil {
-    position: absolute;
-    left: -13vw;
-    bottom: 108vh;
     font-size: xx-large;
 }
 
@@ -79,22 +64,6 @@ body {
     position: absolute;
     left: 105vw;
     bottom: 108vh;
-    font-size: xx-large;
-}
-
-.titre_centre_interet {
-    font-size: xx-large;
-    left: -95vw;
-    top: 186vh;
-    position: absolute;
-	font-weight: bold;
-	font-size: 3rem;
-}
-
-.centre_acceuil {
-    position: absolute;
-    left: -13vw;
-    top: 106vh;
     font-size: xx-large;
 }
 
@@ -126,7 +95,7 @@ body {
     transform: translate(100vw,100vh);
 }
 
-.centre_interet {
+.formation {
     transform: translate(100vw,-100vh);
 }
 
@@ -194,6 +163,7 @@ a.button:hover:before, a.button:hover:after{
     right: 30vw;
     top: 23vh;
     transition: 1.7s 0.3s cubic-bezier(0.35, 0, 0.07, 1);
+    z-index: 10;
 }
 
 .tortue_flotte {
@@ -211,7 +181,7 @@ a.button:hover:before, a.button:hover:after{
     /* transform: translate(-152vw,-100vh) scaleX(-1) scaleX(-1); */
 }
 
-.tortue.centre_interet {
+.tortue.formation {
     transition: 1.7s 0.3s cubic-bezier(0.35, 0, 0.07, 1) !important;
     /* transform: translate(-82vw,100vh) scaleX(-1); */
 }
@@ -237,4 +207,22 @@ a.button:hover:before, a.button:hover:after{
     width: 8vw;
     height: auto;
     cursor: pointer;
+}
+
+.underline{
+    position: relative;
+    display: inline-block;
+}
+.underline::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: auto;
+    left: 0;
+    width: 110%;
+    height: 5px;
+    background-color: darkorange;
+    transition: width 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+    top: 5vh;
+    border-radius: 30px;
 }

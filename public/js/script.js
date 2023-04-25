@@ -1,17 +1,25 @@
 var flotte_interval
 var flotte_timeout
 var flotte_timeout1
+var flotte_timeout2
 var distance = {"acceuil": [0,0, ""],
                 "projet": [52,-100, "scaleX(-1) scaleX(-1)"],
                 "about": [-152,-100, "scaleX(-1) scaleX(-1)"], 
-                "centre_interet": [-82, 100, "scaleX(-1)"], 
+                "formation": [-72, 100, "scaleX(-1)"], 
                 "veille": [122,100, "scaleX(-1)"]
                 }
 
-function transi(target) {
+function transi(event, target) {
+    event.preventDefault()
+    const url = new URL(location);
+    url.searchParams.set("page", target);
+    history.pushState({}, "", url);
+
+
     clearInterval(flotte_interval);
     clearTimeout(flotte_timeout);
     clearTimeout(flotte_timeout1);
+    clearTimeout(flotte_timeout2);
     $(".tortue").css("");
 
     $("body").removeClass();
@@ -21,7 +29,7 @@ function transi(target) {
     $(".tortue").addClass(target);
     $(".tortue").css({"-webkit-transform":"translate("+distance[target][0]+"vw, "+distance[target][1]+"vh) "+distance[target][2]});
 
-    setTimeout(() => {
+    flotte_timeout2 = setTimeout(() => {
         tortue_qui_vole(distance[target])
     }, 2000);
 }
@@ -50,6 +58,7 @@ function vers_linfini() {
     clearInterval(flotte_interval);
     clearTimeout(flotte_timeout);
     clearTimeout(flotte_timeout1);
+    clearTimeout(flotte_timeout2);
     $(".tortue").removeClass("tortue_flotte");
     $(".tortue").removeClass("infini");
 
@@ -59,7 +68,7 @@ function vers_linfini() {
         $(".tortue").addClass("reset");
         setTimeout(() => {
             $(".tortue").removeClass("reset");
-        }, 10);
+        }, 50);
     }, 160);
 
     setTimeout(() => {
@@ -68,5 +77,8 @@ function vers_linfini() {
 }
 
 window.addEventListener('load', function () {
-    tortue_qui_vole(distance.acceuil)
+    // tortue_qui_vole(distance.acceuil)
+    var page = new URLSearchParams(this.window.location.search).get('page');
+    console.log(page)
+    transi(this.event, page)
 })
