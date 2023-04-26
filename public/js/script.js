@@ -2,6 +2,7 @@ var flotte_interval
 var flotte_timeout
 var flotte_timeout1
 var flotte_timeout2
+var infini_timeout
 var distance = {"acceuil": [0,0, ""],
                 "projet": [52,-100, "scaleX(-1) scaleX(-1)"],
                 "about": [-152,-100, "scaleX(-1) scaleX(-1)"], 
@@ -15,11 +16,11 @@ function transi(event, target) {
     url.searchParams.set("page", target);
     history.pushState({}, "", url);
 
-
     clearInterval(flotte_interval);
     clearTimeout(flotte_timeout);
     clearTimeout(flotte_timeout1);
     clearTimeout(flotte_timeout2);
+    clearTimeout(infini_timeout);
     $(".tortue").css("");
 
     $("body").removeClass();
@@ -59,6 +60,7 @@ function vers_linfini() {
     clearTimeout(flotte_timeout);
     clearTimeout(flotte_timeout1);
     clearTimeout(flotte_timeout2);
+    clearTimeout(infini_timeout);
     $(".tortue").removeClass("tortue_flotte");
     $(".tortue").removeClass("infini");
 
@@ -69,16 +71,17 @@ function vers_linfini() {
         setTimeout(() => {
             $(".tortue").removeClass("reset");
         }, 50);
-    }, 160);
+    }, 150);
 
-    setTimeout(() => {
+    infini_timeout = setTimeout(() => {
         tortue_qui_vole(distance.acceuil)
-    }, 2000);
+    }, 2100);
 }
 
 window.addEventListener('load', function () {
     // tortue_qui_vole(distance.acceuil)
     var page = new URLSearchParams(this.window.location.search).get('page');
+    page = page!==null?page:'acceuil'
     console.log(page)
     transi(this.event, page)
 })

@@ -41,5 +41,44 @@
 
 	font-weight: bold;
 	font-size: 2.3rem;
+}
 
+.expe_cont{
+    /* background-color: rebeccapurple; */
+    width: 40vw;
+    height: 100%;
+}
+
+.titre_experience {
+    margin-top: 4vh;
+    width: fit-content;
+    margin-bottom: 4vh;
+	font-size: 2.3rem;
+}
+
+.titre_apart {
+    display: flex;
+    justify-content: space-between;
+}
+
+.date {
+    position: relative;
+    right: 4vw;
+}
+
+.p_formation {
+    position: relative;
+    color: gray;
+    width: 44vw;
+	font-size: 1.55vw;
+}
+
+.pre_formation {
+    /* margin-left: 2vw; */
+    top: -1vh;
+	font-size: 1.35vw;
+    position: relative;
+    color: darkgrey;
+    white-space: pre;
+    left: -4vw;
 }
