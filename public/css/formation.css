@@ -36,8 +36,9 @@
     border-radius: 30px;
     padding-left: 2vw;
     display: inline-flex;
-    flex-direction: column;
+    flex-direction: row;
     /* background-color: #efefef; */
+    /* background-color: rgba(239, 239, 239, 0.4); */
 
 	font-weight: bold;
 	font-size: 2.3rem;
@@ -46,6 +47,12 @@
 .expe_cont{
     /* background-color: rebeccapurple; */
     width: 40vw;
+    height: 100%;
+}
+
+.pro_cont{
+    /* background-color: rebeccapurple; */
+    width: 30vw;
     height: 100%;
 }
 
@@ -63,13 +70,24 @@
 
 .date {
     position: relative;
-    right: 4vw;
+    right: 4.1vw;
+}
+.date_pro {
+    position: relative;
+    right: 0.7vw;
 }
 
 .p_formation {
     position: relative;
     color: gray;
-    width: 44vw;
+    width: 40vw;
+	font-size: 1.55vw;
+}
+
+.pro_formation {
+    position: relative;
+    color: gray;
+    width: 100%;
 	font-size: 1.55vw;
 }
 
@@ -80,5 +98,6 @@
     position: relative;
     color: darkgrey;
     white-space: pre;
-    left: -4vw;
+    left: -5vw;
+    line-height: 3.5vh;
 }
