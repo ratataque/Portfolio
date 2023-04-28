@@ -31,13 +31,28 @@
         </div>
 
         <div class="pro_cont">
-            <div class="titre_experience underline">Expérience</div>
+            <div class="titre_experience underline">Professionnel</div>
             <div class="pro_formation">
                 <div class="titre_apart">Support IT     <div class="date_pro">2021/2023</div></div>
-                <div class="pre_formation">
-                    <span style="color: darkorange;">-</span> Python, C
-                    <span style="color: darkorange;">-</span> architecture d'un pc, (processeur, ram ...)
-                    <span style="color: darkorange;">-</span> algo, bfs, dfs, dijkstra, hash table, binary tree
+                <div class="titre_apart">Witt group france / Strasbourg</div>
+                <div class="pre_pro">
+                    <div class="div1">
+                        <span style="color: darkorange;">-</span> Help desk, gestion de parc, config 
+                        résaeaux/pc/outils
+                    </div>      
+                    <div class="div1">
+                        <span style="color: darkorange;">-</span> Création de site web en intranet pour la 
+                        gestions de taches
+                    </div>
+                    <div class="div2">
+                        <span style="color: darkorange;">-</span> Script VBA pour l'optimisations de
+                        taches récurrentes
+                    </div>
+                    <div class="div3">
+                        <span style="color: darkorange;">-</span> Chargée de communicaiton et résolution 
+                        des problèmes 
+                    </div>
+                    <div class="div4"> avec les prestataire informatiques</div>
                 </div>
             </div>
         </div>

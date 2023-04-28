@@ -4,7 +4,7 @@
     width: 100vw;
     top: -100vh;
     left: -100vw;
-    background-image: url("../images/about_test.jpg");
+    /* background-image: url("../images/about_test.jpg"); */
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -16,6 +16,7 @@
     position: absolute;
 	font-weight: bold;
 	font-size: 3rem;
+    text-shadow: 16px 22px 11px rgba(0,0,0,0.25);
 }
 
 .overlay_about {
@@ -25,7 +26,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgba(239, 239, 239, 0.9);
+    background-color: rgba(239, 239, 239, 0.8);
+    backdrop-filter: blur(5px);
     height: 14vh;
     width: 14vw;
     border-radius: 30px;
@@ -35,6 +37,8 @@
     position: relative;
     text-align: center;
     font-size: xx-large;
+    color: gray !important;
+    text-shadow: 16px 22px 11px rgba(0,0,0,0.15);
 }
 
 .pdp {
@@ -58,7 +62,8 @@
     padding-left: 2vw;
     display: inline-flex;
     flex-direction: column;
-    background-color: rgba(239, 239, 239, 0.9);
+    background-color: rgba(239, 239, 239, 0.5);
+    backdrop-filter: blur(5px);
 
 	font-weight: bold;
 }
@@ -71,7 +76,7 @@
 }
 
 .p_presentation {
-    color: darkgrey;
+    color: gray;
     margin-left: 2vw;
     width: 44vw;
 	font-size: 1.35vw;
@@ -87,6 +92,6 @@
     background-color: transparent;
 }
 .pre a:visited {
-    color:  gray;
+    color:  darkgray;
     background-color: transparent;
 }

@@ -10,7 +10,7 @@ var distance = {"acceuil": [0,0, ""],
                 "veille": [122,100, "scaleX(-1)"]
                 }
 
-function transi(event, target) {
+function transi(event, target, onload=false) {
     event.preventDefault()
     const url = new URL(location);
     url.searchParams.set("page", target);
@@ -30,9 +30,11 @@ function transi(event, target) {
     $(".tortue").addClass(target);
     $(".tortue").css({"-webkit-transform":"translate("+distance[target][0]+"vw, "+distance[target][1]+"vh) "+distance[target][2]});
 
-    flotte_timeout2 = setTimeout(() => {
-        tortue_qui_vole(distance[target])
-    }, 2000);
+    if (!onload) {
+        flotte_timeout2 = setTimeout(() => {
+            tortue_qui_vole(distance[target])
+        }, 2000);
+    }
 }
 
 function tortue_qui_vole(d) {
@@ -63,6 +65,7 @@ function vers_linfini() {
     clearTimeout(infini_timeout);
     $(".tortue").removeClass("tortue_flotte");
     $(".tortue").removeClass("infini");
+    $(".tortue").css({"-webkit-transform":"translate(0vw, 0vh)"});
 
     $(".tortue").addClass("infini");
     setTimeout(() => {
@@ -83,5 +86,10 @@ window.addEventListener('load', function () {
     var page = new URLSearchParams(this.window.location.search).get('page');
     page = page!==null?page:'acceuil'
     console.log(page)
-    transi(this.event, page)
+    if (page === 'acceuil') {
+        transi(this.event, page, onlaud=true)
+        tortue_qui_vole(distance[page])
+    } else {
+        transi(this.event, page)
+    }
 })

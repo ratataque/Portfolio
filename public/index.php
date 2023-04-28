@@ -15,6 +15,7 @@ $page = htmlspecialchars($page);
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/about.css">
     <link rel="stylesheet" href="css/formation.css">
+    <link rel="stylesheet" href="css/projet.css">
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="./js/script.js"></script>
@@ -43,8 +44,7 @@ $page = htmlspecialchars($page);
 
     <?php include_once("about.php") ?>
 
-    <a id="projet" class="titre_projet">Projets</a>
-    <a class="projet_acceuil button" href="/" onclick="transi(event, 'acceuil');">Acceuil</a>
+    <?php include_once("projet.php") ?>
 
     <?php include_once("formation.php") ?>
 

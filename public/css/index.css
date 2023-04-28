@@ -15,10 +15,10 @@ body {
     transition: 0.9s 0.1s cubic-bezier(0.35, 0, 0.07, 1);
     width: 100vw;
     height: 100vh;
-    /* background-image: url("../images/tortue.png");
+    background-image: url("../images/formation.png");
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover; */
+    background-size: cover;
     /* background-color: darkgray; */
     background-color: #efefef;
 }
@@ -28,6 +28,7 @@ body {
     left: 85vw;
     top: 10vh;
     font-size: xx-large;
+    text-shadow: 16px 22px 11px rgba(0,0,0,0.13);
 }
 
 .vers_about {
@@ -35,6 +36,7 @@ body {
     left: 8vw;
     top: 10vh;
     font-size: xx-large;
+    text-shadow: 16px 22px 11px rgba(0,0,0,0.13);
 }
 
 .vers_formation {
@@ -42,6 +44,7 @@ body {
     left: 8vw;
     top: 80vh;
     font-size: xx-large;
+    text-shadow: 16px 22px 11px rgba(0,0,0,0.13);
 }
 
 .vers_veille {
@@ -49,22 +52,7 @@ body {
     left: 71vw;
     top: 80vh;
     font-size: xx-large;
-}
-
-.titre_projet {
-    font-size: xx-large;
-    left: 186vw;
-    bottom: 188vh;
-    position: absolute;
-	font-weight: bold;
-	font-size: 3rem;
-}
-
-.projet_acceuil {
-    position: absolute;
-    left: 105vw;
-    bottom: 108vh;
-    font-size: xx-large;
+    text-shadow: 16px 22px 11px rgba(0,0,0,0.13);
 }
 
 .titre_veille {
@@ -106,19 +94,34 @@ body {
 .moi {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif !important;
     position: absolute;
-    left: 20vw;
-    top: 35vh;
+    left: 15vw;
+    top: 18vh;
+    /* box-shadow: rgba(0, 0, 0, 0.2) 0px 29px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px; */
+    border-radius: 30vw;
+    width: 30vw;
+    height: 30vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* background: rgba(235, 235, 235, 0.25); */
+    -webkit-backdrop-filter: blur(8px);  /* Safari 9+ */
+    backdrop-filter: blur(8px); /* Chrome and Opera */
+    box-shadow: 0px 10px 15px 10px rgb(0 0 0 / 15%);
+    background-color: rgb(228 228 228 / 15%); 
 }
 
 .nom {
     font-size: 600%;
     font-weight: 900;
+    text-shadow: 16px 22px 18px rgba(0,0,0,0.3);
 }
 
 .prenom {
     font-size: 400%;
     font-weight: 900;
     color: darkorange;
+    text-shadow: 16px 22px 18px rgba(255,140,0,0.4);
 }
 
 
@@ -225,4 +228,5 @@ a.button:hover:before, a.button:hover:after{
     transition: width 0.6s cubic-bezier(0.25, 1, 0.5, 1);
     top: 5vh;
     border-radius: 30px;
+    box-shadow: 16px 18px 11px rgba(255,140,0,0.4);
 }
