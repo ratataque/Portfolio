@@ -50,6 +50,16 @@ $page = htmlspecialchars($page);
 
     <a id="veille" class="titre_veille">Veille Technologique</a>
     <a class="veille_acceuil button" href="/" onclick="transi(event, 'acceuil');">Acceuil</a>
+
+    <script type="text/javascript" src="./js/vanilla-tilt.js"></script>
+    <script type="text/javascript">
+        VanillaTilt.init(document.querySelectorAll(".card"), {
+            max: 25,
+            speed: 400,
+            glare: true,
+            "max-glare": 1,
+        });
+    </script>
 </body>
 
 </html>

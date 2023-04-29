@@ -5,6 +5,7 @@
     top: -100vh;
     left: 100vw;
     /* background-image: url("../images/formation.png"); */
+    /* background-color: black; */
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -26,4 +27,48 @@
     bottom: 8vh;
     font-size: xx-large;
     text-shadow: 16px 22px 11px rgba(0,0,0,0.15);
+}
+
+.cards_cont {
+    position: absolute;
+    /* background-color: red; */
+    height: 65vh;
+    width: 55vw;
+    left: 25vw;
+    top: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.cards_cont .card {
+    position: relative;
+    width: 280px;
+    height: 400px;
+    margin: 30px;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.1);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid rgb(255, 255, 255, 0.5);
+    border-left: 1px solid rgb(255, 255, 255, 0.5);
+    backdrop-filter: blur(5px);
+}
+
+.cards_cont .card .content {
+    /* transform: translateY(100px); */
+    /* opacity: 0; */
+	font-weight: bold;
+	font-size: 2.3rem;
+    /* color: gray; */
+    transition: 0.5s;
+    pointer-events: none;
+}
+
+.cards_cont .card:hover .content {
+    transform: translateY(0px);
+    opacity: 1;
 }
