@@ -15,15 +15,49 @@
 
         <div class="card">
             <div class="content">
-                test
+                <img class="bee" src="./images/bee_icon.png"/> Le miel et les abeilles
+                <img class="image" src="./images/fraise_disp.png"/>
+                Site vitrine pour la vente de miel en duo avec l'application mobile
                 <a class="voir_plus" href="https://github.com/ratataque/fraise" target="_blank">Voir plus</a>
             </div>
         </div>
 
         <div class="card">
             <div class="content">
-                test
+                <img class="bee" src="./images/bee_icon.png"/> Appli miel
+                <img class="image" src="./images/fraise_disp.png"/>
+                Application mobile qui vas de pair avec le site vitrine pour la vente de miel
+                <a class="voir_plus" href="https://github.com/ratataque/fraise" target="_blank">Voir plus</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="content">
+                <img class="bee" src="./images/advent_titre-removebg-preview.png"/>
+                <img class="image" src="./images/advent.png"/>
+                Solution au 25 probleme realiser en python
+                <a class="voir_plus" href="https://github.com/ratataque/fraise" target="_blank">Voir plus</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="content">
+                <img class="vroom" src="./images/Vroooom.png"/>
+                <img class="image" src="./images/fraise_disp.png"/>
+                Simulation d'entreprise prettant de l'argent pour louer des voitures en liesing
+                <a class="voir_plus" href="https://github.com/ratataque/fraise" target="_blank">Voir plus</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="content">
+                <img class="vroom" src="./images/Vroooom.png"/>
+                <img class="image" src="./images/fraise_disp.png"/>
+                Application mobile qui vas gere la partie expertise des voiture lors de leurs retour
+                <a class="voir_plus" href="https://github.com/ratataque/fraise" target="_blank">Voir plus</a>
             </div>
         </div>
     </div>
+
+    <div class="arrow"/>
 </div>
