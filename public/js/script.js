@@ -93,3 +93,22 @@ window.addEventListener('load', function () {
         transi(this.event, page)
     }
 })
+
+$('.round').click(function(e) {
+    e.preventDefault();
+    e.stopPropagation();
+    $('.arrow').toggleClass('bounceAlpha');
+});
+
+function projet_next_page(round) {
+    if ($(round).hasClass("rotate")) {
+        $(round).removeClass("rotate");
+        $(".cards_cont").removeClass("projet_slide");
+        $(".cards_cont_decale").removeClass("slide_back");
+    } else {
+        $(round).addClass("rotate");
+        $(".cards_cont").addClass("projet_slide");
+        $(".cards_cont_decale").addClass("slide_back");
+    }
+    
+}

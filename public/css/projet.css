@@ -40,11 +40,28 @@
     justify-content: center;
     /* align-items: center; */
     flex-wrap: wrap;
+    transition: 0.750s cubic-bezier(0.35, 0, 0.07, 1);
 }
-.cards_cont .card {
+.cards_cont_decale {
+    position: absolute;
+    /* background-color: red; */
+    height: 65vh;
+    width: 59vw;
+    left: 23vw;
+    top: 23vh;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    flex-wrap: wrap;
+    transition: 0.750s cubic-bezier(0.35, 0, 0.07, 1);
+    opacity: 0;
+    transform: translateX(60vw);
+    z-index: -2;
+}
+.card {
     position: relative;
     width: 280px;
-    height: 400px;
+    height: 380px;
     margin: 30px;
     box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
     border-radius: 15px;
@@ -58,7 +75,7 @@
     backdrop-filter: blur(5px);
 }
 
-.cards_cont .card .content {
+.card .content {
     /* transform: translateY(100px); */
     /* opacity: 0; */
 	font-weight: bold;
@@ -82,7 +99,7 @@
     pointer-events: all;
     position: absolute;
     left: 75px;
-    bottom: 25px;
+    bottom: 18px;
     height: 40px;
     width: 120px;
     background-color: transparent;
@@ -90,14 +107,14 @@
     border-radius: 40px;
     font-size: 1.2rem;
 	font-weight: bold;
-    color: darkorange;
+    color: gray;
     display: flex;
     justify-content: center;
     align-items: center;
     text-decoration: none;
 }
 
-.cards_cont .card:hover .content {
+.card:hover .content {
     transform: translateY(0px);
     opacity: 1;
 }
@@ -112,12 +129,92 @@
     width: auto;
 }
 
-.projet_cont .arrow {
-    top: 46vh;
-    right: 10vw;
+.round {
     position: absolute;
-    height: 80px;
-    width: 80px;
     border: 4px solid darkorange;
-    border-radius: 80px;
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    top: 47vh;
+    right: 13vw;
+    cursor: pointer; 
+    backdrop-filter: blur(4px); /* Chrome and Opera */
+    /* box-shadow: 0px 10px 15px 10px rgb(0 0 0 / 15%); */
+    background-color: rgb(228 228 228 / 15%); 
+    transition: 0.750s ease-in-out;
+}
+.round:active {
+    scale: 0.8;
+    transition: 0.2s;
+}
+#cta{
+    width:100%; 
+    cursor: pointer; 
+    position: absolute;
+}
+
+#cta .arrow{left: 35%;}
+.arrow {position: absolute;
+    bottom: 0;  
+    margin-left:0px; 
+    width: 22px; 
+    height: 22px; 
+    background-size: contain; 
+    top: 28px;
+}
+.segunda{margin-left: 10px;}
+.next {
+	background-image: url(data:image/svg+xml;base64,PHN2ZyBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2aWV3Qm94PSIwIDAgNTEyIDUxMiI+PHN0eWxlPi5zdDB7ZmlsbDojYTlhOWE5fTwvc3R5bGU+PHBhdGggY2xhc3M9InN0MCIgZD0iTTMxOS4xIDIxN2MyMC4yIDIwLjIgMTkuOSA1My4yLS42IDczLjdzLTUzLjUgMjAuOC03My43LjZsLTE5MC0xOTBjLTIwLjEtMjAuMi0xOS44LTUzLjIuNy03My43UzEwOSA2LjggMTI5LjEgMjdsMTkwIDE5MHoiLz48cGF0aCBjbGFzcz0ic3QwIiBkPSJNMzE5LjEgMjkwLjVjMjAuMi0yMC4yIDE5LjktNTMuMi0uNi03My43cy01My41LTIwLjgtNzMuNy0uNmwtMTkwIDE5MGMtMjAuMiAyMC4yLTE5LjkgNTMuMi42IDczLjdzNTMuNSAyMC44IDczLjcuNmwxOTAtMTkweiIvPjwvc3ZnPg==);
+}
+
+@keyframes bounceAlpha {
+    0% {opacity: 1; transform: translateX(0px) scale(1);}
+    25%{opacity: 0; transform:translateX(20px) scale(0.9);}
+    26%{opacity: 0; transform:translateX(-20px) scale(0.9);}
+    55% {opacity: 1; transform: translateX(0px) scale(1);}
+}
+
+.bounceAlpha {
+    animation-name: bounceAlpha;
+    animation-duration:1.4s;
+    animation-iteration-count:infinite;
+    animation-timing-function:linear;
+}
+
+.arrow.primera.bounceAlpha {
+    animation-name: bounceAlpha;
+    animation-duration:1.4s;
+    animation-delay:0.2s;
+    animation-iteration-count:infinite;
+    animation-timing-function:linear;
+}
+
+.round:hover .arrow{
+    animation-name: bounceAlpha;
+    animation-duration:1.4s;
+    animation-iteration-count:infinite;
+    animation-timing-function:linear;
+}
+.round:hover .arrow.primera{
+    animation-name: bounceAlpha;
+    animation-duration:1.4s;
+    animation-delay:0.2s;
+    animation-iteration-count:infinite;
+    animation-timing-function:linear;
+}
+
+.rotate {
+    transform: rotate(-180deg);
+}
+
+.projet_slide {
+    transform: translateX(-60vw);
+    opacity: 0;
+    z-index: -2;
+}
+
+.slide_back {
+    transform: none;
+    opacity: 1;
+    z-index: 1;
 }
