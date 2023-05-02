@@ -1,5 +1,7 @@
 <?php
 session_start();
+$page = !isset($_GET["page"])?"":$_GET["page"];
+$page = htmlspecialchars($page);
 ?>
 
 <!DOCTYPE html>
@@ -11,40 +13,53 @@ session_start();
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/formation.css">
+    <link rel="stylesheet" href="css/projet.css">
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="./js/script.js"></script>
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.1.0/anime.min.js"></script>
 
-    <title>Le Miel et les abeilles</title>
+    <title>Rimmely Ewan</title>
 </head>
 
-<body>
-    <a class="vers_about button" href="#" onclick="transi('about');">About</a>
-    <a class="vers_projet button" href="#" onclick="transi('projet');">Projets</a>
+<body class=<?php echo "'$page'" ?>>
+    <a class="vers_about button" href="/?page=about" onclick="transi(event, 'about');">About</a>
+    <a class="vers_projet button" href="/?page=projet" onclick="transi(event, 'projet');">Projets</a>
 
     <div class="moi">
         <div class="nom">RIMMELY</div>
         <div class="prenom">Ewan</div>
     </div>
 
-    <a class="vers_centre_interet button" href="#" onclick="transi('centre_interet');">Centre D'interet</a>
-    <a class="vers_veille button" href="#" onclick="transi('veille');">Veille Technologique</a>
+    <img class="tortue <?php echo "$page" ?>" alt="tortue" src="./images/tortue_petite-removebg-preview.png"/>
+
+    <img class="fleche" alt="fleche" src="./images/infini.png" onclick="vers_linfini()"/>
+
+    <a class="vers_formation button" href="/?page=formation" onclick="transi(event, 'formation');">Formation</a>
+    <a class="vers_veille button" href="/?page=veille" onclick="transi(event, 'veille');">Veille Technologique</a>
 
 
-    <a id="about" class="titre_about">About</a>
-    <a class="about_acceuil button" href="#" onclick="transi('acceuil');">Acceuil</a>
+    <?php include_once("about.php") ?>
 
-    <a id="projet" class="titre_projet">Projets</a>
-    <a class="projet_acceuil button" href="#" onclick="transi('acceuil');">Acceuil</a>
+    <?php include_once("projet.php") ?>
 
-    <a id="centre_interet" class="titre_centre_interet">Centre D'interet</a>
-    <a class="centre_acceuil button" href="#" onclick="transi('acceuil');">Acceuil</a>
+    <?php include_once("formation.php") ?>
 
     <a id="veille" class="titre_veille">Veille Technologique</a>
-    <a class="veille_acceuil button" href="#" onclick="transi('acceuil');">Acceuil</a>
+    <a class="veille_acceuil button" href="/" onclick="transi(event, 'acceuil');">Acceuil</a>
+
+    <script type="text/javascript" src="./js/vanilla-tilt.js"></script>
+    <script type="text/javascript">
+        VanillaTilt.init(document.querySelectorAll(".card"), {
+            max: 25,
+            speed: 400,
+            glare: true,
+            "max-glare": 1,
+        });
+    </script>
 </body>
 
 </html>

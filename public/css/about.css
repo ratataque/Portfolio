@@ -1,0 +1,97 @@
+.about_cont {
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    top: -100vh;
+    left: -100vw;
+    /* background-image: url("../images/about_test.jpg"); */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.titre_about {
+    left: 5vw;
+    top: 5vh;
+    position: absolute;
+	font-weight: bold;
+	font-size: 3rem;
+    text-shadow: 16px 22px 11px rgba(0,0,0,0.25);
+}
+
+.overlay_about {
+    position: absolute;
+    right: 5vw;
+    bottom: 8vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(239, 239, 239, 0.8);
+    backdrop-filter: blur(5px);
+    height: 14vh;
+    width: 14vw;
+    border-radius: 30px;
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+.about_acceuil {
+    position: relative;
+    text-align: center;
+    font-size: xx-large;
+    color: gray !important;
+    text-shadow: 16px 22px 11px rgba(0,0,0,0.15);
+}
+
+.pdp {
+    position: absolute;
+    right: 8vw;
+    top: 13vh;
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    border-radius: 40px;
+    height: 45vh;
+    width: auto;
+}
+
+.text_cont {
+    position: absolute;
+    margin-top: 13vh;
+    margin-left: 20vw;
+    height: 76vh;
+    width: 50vw;
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    border-radius: 30px;
+    padding-left: 2vw;
+    display: inline-flex;
+    flex-direction: column;
+    background-color: rgba(239, 239, 239, 0.5);
+    backdrop-filter: blur(5px);
+
+	font-weight: bold;
+}
+
+.titre_moi {
+    margin-top: 4vh;
+    width: fit-content;
+    margin-bottom: 5vh;
+	font-size: 2.3rem;
+}
+
+.p_presentation {
+    color: gray;
+    margin-left: 2vw;
+    width: 44vw;
+	font-size: 1.35vw;
+}
+
+.pre {
+    /* margin-left: 2vw; */
+    white-space: pre;
+}
+
+.pre a:link {
+    color: darkorange;
+    background-color: transparent;
+}
+.pre a:visited {
+    color:  darkgray;
+    background-color: transparent;
+}

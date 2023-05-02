@@ -1,0 +1,141 @@
+.formation_cont {
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    top: 100vh;
+    left: -100vw;
+    /* background-image: url("../images/formation.png"); */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.titre_formation {
+    font-size: xx-large;
+    left: 4vw;
+    bottom: 6vh;
+    position: absolute;
+	font-weight: bold;
+	font-size: 3rem;
+    text-shadow: 16px 22px 11px rgba(0,0,0,0.2);
+}
+
+.formation_acceuil {
+    position: absolute;
+    right: 5vw;
+    top: 5vh;
+    font-size: xx-large;
+    text-shadow: 16px 22px 11px rgba(0,0,0,0.1);
+}
+
+.text_cont_formation {
+    position: absolute;
+    margin-top: 4vh;
+    margin-left: 5vw;
+    height: 76vh;
+    width: 70vw;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    border-radius: 30px;
+    padding-left: 2vw;
+    display: inline-flex;
+    flex-direction: row;
+    backdrop-filter: blur(3px);
+    /* background-color: #efefef; */
+    /* background-color: rgba(239, 239, 239, 0.4); */
+
+	font-weight: bold;
+	font-size: 2.3rem;
+}
+
+.expe_cont{
+    /* background-color: rebeccapurple; */
+    width: 40vw;
+    height: 100%;
+}
+
+.pro_cont{
+    /* background-color: rebeccapurple; */
+    width: 30vw;
+    height: 100%;
+}
+
+.titre_experience {
+    margin-top: 4vh;
+    width: fit-content;
+    margin-bottom: 4vh;
+	font-size: 2.3rem;
+}
+
+.titre_apart {
+    display: flex;
+    justify-content: space-between;
+}
+
+.date {
+    position: relative;
+    right: 4.1vw;
+}
+.date_pro {
+    position: relative;
+    right: 0.7vw;
+}
+
+.p_formation {
+    position: relative;
+    color: gray;
+    width: 40vw;
+	font-size: 1.55vw;
+}
+
+.pro_formation {
+    position: relative;
+    color: gray;
+    width: 100%;
+    height: 85%;
+	font-size: 1.55vw;
+}
+
+.pre_formation {
+    /* margin-left: 2vw; */
+    top: -1vh;
+	font-size: 1.35vw;
+    position: relative;
+    color: darkgrey;
+    white-space: pre;
+    left: -5vw;
+    line-height: 3.5vh;
+}
+
+.pre_pro {
+    padding-top: 2vh;
+    padding-left: 2vw;
+    top: -1vh;
+	font-size: 1.35vw;
+    position: relative;
+    color: darkgrey;
+    line-height: 3.5vh;
+    display: flex;
+    flex-direction: column;
+}
+.pre_pro .div1{
+    width: 100%;
+    height: auto;
+}
+.pre_pro .div2{
+    position: relative;
+    width: calc(100% - 4vw);
+    height: auto;
+    left: 4vw;
+}
+.pre_pro .div3{
+    position: relative;
+    width: calc(100% - 8vw);
+    height: auto;
+    left: 8vw;
+}
+.pre_pro .div4{
+    position: relative;
+    width: calc(100% - 11vw);
+    height: auto;
+    left: 11vw;
+}
