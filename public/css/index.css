@@ -147,7 +147,7 @@ a.button:hover:before, a.button:hover:after{
 
 .tortue {
     position: absolute;
-    right: 30vw;
+    right: 23vw;
     top: 23vh;
     transition: 1.7s 0.3s cubic-bezier(0.35, 0, 0.07, 1);
     z-index: 10;

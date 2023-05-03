@@ -34,8 +34,14 @@
     padding-left: 2vw;
     display: inline-flex;
     flex-direction: column;
-    backdrop-filter: blur(3px);
+    backdrop-filter: blur(5px);
+    background-color: rgb(228 228 228 / 15%); 
 
 	font-weight: bold;
-	font-size: 2.3rem;
+	font-size: 1.6vw;
+    color: gray;
 }
+
+/* .veille_content .titre_experience {
+
+} */

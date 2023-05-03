@@ -33,9 +33,9 @@
     position: absolute;
     /* background-color: red; */
     height: 65vh;
-    width: 59vw;
-    left: 23vw;
-    top: 5vh;
+    width: 62vw;
+    left: 20vw;
+    top: 3vh;
     display: flex;
     justify-content: center;
     /* align-items: center; */
@@ -61,7 +61,7 @@
 .card {
     position: relative;
     width: 15vw;
-    height: 36vh;
+    height: 40vh;
     margin: 30px;
     box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
     border-radius: 15px;
@@ -90,10 +90,23 @@
     display: inline;
 }
 .content .image {
-    width: 260px;
+    width: 14vw;
     height: auto;
+    max-height: 20vh;
     opacity: 0.7;
     border-radius: 10px;
+}
+.content .tel {
+    width: auto;
+    height: 22vh;
+    opacity: 0.7;
+    border-radius: 10px;
+    margin-right: 0.5vw;
+}
+.tel_cont {
+    display: flex;
+    flex-direction: row;
+    color: rgb(78 78 78);
 }
 .content .voir_plus {
     pointer-events: all;
@@ -122,6 +135,7 @@
 .content .bee {
     height: 40px;
     width: auto;
+    margin-right: 0.5vw;
 }
 
 .content .vroom {
@@ -217,4 +231,7 @@
     transform: none;
     opacity: 1;
     z-index: 1;
+}
+.gris {
+    color: rgb(78 78 78);
 }

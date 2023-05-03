@@ -4,10 +4,10 @@ var flotte_timeout1
 var flotte_timeout2
 var infini_timeout
 var distance = {"acceuil": [0,0, ""],
-                "projet": [52,-100, "scaleX(-1) scaleX(-1)"],
-                "about": [-152,-100, "scaleX(-1) scaleX(-1)"], 
-                "formation": [-72, 100, "scaleX(-1)"], 
-                "veille": [130,100, "scaleX(-1)"]
+                "projet": [43,-100, "scaleX(-1) scaleX(-1)"],
+                "about": [-159,-100, "scaleX(-1) scaleX(-1)"], 
+                "formation": [-79, 100, "scaleX(-1)"], 
+                "veille": [122,100, "scaleX(-1)"]
                 }
 
 function transi(event, target, onload=false) {
