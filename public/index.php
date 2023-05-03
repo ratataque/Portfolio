@@ -16,6 +16,7 @@ $page = htmlspecialchars($page);
     <link rel="stylesheet" href="css/about.css">
     <link rel="stylesheet" href="css/formation.css">
     <link rel="stylesheet" href="css/projet.css">
+    <link rel="stylesheet" href="css/veille.css">
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="./js/script.js"></script>
@@ -48,8 +49,7 @@ $page = htmlspecialchars($page);
 
     <?php include_once("formation.php") ?>
 
-    <a id="veille" class="titre_veille">Veille Technologique</a>
-    <a class="veille_acceuil button" href="/" onclick="transi(event, 'acceuil');">Acceuil</a>
+    <?php include_once("veille.php") ?>
 
     <script type="text/javascript" src="./js/vanilla-tilt.js"></script>
     <script type="text/javascript">

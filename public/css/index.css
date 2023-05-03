@@ -27,7 +27,7 @@ body {
     position: absolute;
     left: 85vw;
     top: 10vh;
-    font-size: xx-large;
+    font-size: 2.5vw !important;
     text-shadow: 16px 22px 11px rgba(0,0,0,0.13);
 }
 
@@ -35,40 +35,24 @@ body {
     position: absolute;
     left: 8vw;
     top: 10vh;
-    font-size: xx-large;
+    font-size: 2.5vw !important;
     text-shadow: 16px 22px 11px rgba(0,0,0,0.13);
 }
 
 .vers_formation {
     position: absolute;
     left: 8vw;
-    top: 80vh;
-    font-size: xx-large;
+    top: 83vh;
+    font-size: 2.5vw !important;
     text-shadow: 16px 22px 11px rgba(0,0,0,0.13);
 }
 
 .vers_veille {
     position: absolute;
-    left: 71vw;
-    top: 80vh;
-    font-size: xx-large;
+    left: 68vw;
+    top: 83vh;
+    font-size: 2.5vw !important;
     text-shadow: 16px 22px 11px rgba(0,0,0,0.13);
-}
-
-.titre_veille {
-    font-size: xx-large;
-    left: 174vw;
-    top: 183vh;
-    position: absolute;
-	font-weight: bold;
-	font-size: 3rem;
-}
-
-.veille_acceuil {
-    position: absolute;
-    left: 105vw;
-    top: 106vh;
-    font-size: xx-large;
 }
 
 .acceuil {

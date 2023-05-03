@@ -1,0 +1,41 @@
+.veille_cont {
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    top: 100vh;
+    left: 100vw;
+}
+.titre_veille {
+    font-size: xx-large;
+    left: 82vw;
+    top: 85vh;
+    position: absolute;
+	font-weight: bold;
+	font-size: 2.5rem;
+    text-shadow: 16px 22px 11px rgba(0,0,0,0.2);
+}
+
+.veille_acceuil {
+    position: absolute;
+    left: 5vw;
+    top: 6vh;
+    font-size: xx-large;
+    text-shadow: 16px 22px 11px rgba(0,0,0,0.15);
+}
+
+.veille_content {
+    position: absolute;
+    margin-top: 18vh;
+    margin-left: 3vw;
+    height: 76vh;
+    width: 74vw;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    border-radius: 30px;
+    padding-left: 2vw;
+    display: inline-flex;
+    flex-direction: column;
+    backdrop-filter: blur(3px);
+
+	font-weight: bold;
+	font-size: 2.3rem;
+}

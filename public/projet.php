@@ -73,7 +73,7 @@
                 <br>
                 <img class="image" src="./images/dotfiles.png"/>
                 Fichier de configuration pour mon linux
-                <a class="voir_plus" href="https://github.com/ratataque/fraise" target="_blank">Voir plus</a>
+                <a class="voir_plus" href="https://github.com/ratataque/dotfiles" target="_blank">Voir plus</a>
             </div>
         </div>
 
@@ -100,7 +100,6 @@
         </div>
     </div>
 
-    <!-- <div class="arrow">🡒</div>  -->
     <div class="round" onclick="projet_next_page(this)">
         <div id="cta">
             <span class="arrow primera next "></span>
