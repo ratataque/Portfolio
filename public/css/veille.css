@@ -11,7 +11,7 @@
     top: 85vh;
     position: absolute;
 	font-weight: bold;
-	font-size: 2.5rem;
+	font-size: 2.2vw;
     text-shadow: 16px 22px 11px rgba(0,0,0,0.2);
 }
 
@@ -19,7 +19,7 @@
     position: absolute;
     left: 5vw;
     top: 6vh;
-    font-size: xx-large;
+	font-size: 2.8vw;
     text-shadow: 16px 22px 11px rgba(0,0,0,0.15);
 }
 
@@ -38,10 +38,77 @@
     background-color: rgb(228 228 228 / 15%); 
 
 	font-weight: bold;
-	font-size: 1.6vw;
+	font-size: 1.3vw;
     color: gray;
 }
 
-/* .veille_content .titre_experience {
+.veille_content .up {
+    width: 100%;
+    height: 35vh;
+    /* background-color: red; */
+    display: flex;
+    flex-direction: row;
+}
 
-} */
+.veille_content .left {
+    width: 70%;
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+}
+.veille_content .right {
+    width: 30%;
+    /* background-color: purple; */
+    display: flex;
+    flex-direction: column;
+}
+
+.img_veille {
+    position: absolute;
+    height: 18vh;
+    width: auto;
+    border-radius: 30px;
+    top: 20vh;
+    left: 5vw;
+    opacity: 0.8;
+}
+.tel_veille {
+    position: absolute;
+    height: 25vh;
+    width: auto;
+    left: 32vw;
+    border-radius: 10px;
+    top: 18vh;
+    opacity: 0.8;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    margin-left: 5vw;
+}
+
+.right a {
+    color: gray;
+}
+.right a:visited {
+    color: gray;
+}
+
+.ytb_cont {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+}
+
+.ytb_cont img {
+    position: relative;
+    height: 10vh;
+    width: auto;
+    border-radius: 28px;
+    opacity: 0.8;
+    margin-left: 1.5vw;
+    margin-top: 2vh;
+}
