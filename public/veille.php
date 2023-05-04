@@ -27,14 +27,14 @@
 
         <div class="titre_experience underline">Createurs de contenu :</div>
         <div class="ytb_cont">
-            <img src="./images/liveoverflow.png">
-            <img src="./images/dt.png">
-            <img src="./images/prime.png">
-            <img src="./images/pwnfunction.png">
-            <img src="./images/owasp.png">
-            <img src="./images/joe_grand.png">
-            <img src="./images/John_hammond.png">
-            <img src="./images/tuto.png">
+            <a href="https://www.youtube.com/@LiveOverflow" target="_blank"><img src="./images/liveoverflow.png"></a>
+            <a href="https://www.youtube.com/@DistroTube" target="_blank"><img src="./images/dt.png"></a>  
+            <a href="https://www.youtube.com/@ThePrimeagen" target="_blank"><img src="./images/prime.png"></a>
+            <a href="https://www.youtube.com/@pwnfunction" target="_blank"><img src="./images/pwnfunction.png"></a>
+            <a href="https://www.youtube.com/@OWASPGLOBAL" target="_blank"><img src="./images/owasp.png"></a>
+            <a href="https://www.youtube.com/@JoeGrand" target="_blank"><img src="./images/joe_grand.png"></a>
+            <a href="https://www.youtube.com/@_JohnHammond" target="_blank"><img src="./images/John_hammond.png"></a>
+            <a href="https://www.youtube.com/@OnlineTutorialsYT" target="_blank"><img src="./images/tuto.png"></a>
         </div>
     </div>
 </div>
