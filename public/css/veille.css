@@ -105,6 +105,9 @@
 .right a {
     color: gray;
 }
+.right a:hover {
+    text-decoration: underline darkorange;
+}
 .right a:visited {
     color: gray;
 }
