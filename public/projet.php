@@ -86,20 +86,20 @@
                 <img class="bee" src="./images/demineur.png"/> Demineur
                 <br>
                 <br>
-                <img class="image" src="./images/fraise_disp.png"/>
-                Site vitrine pour la vente de miel en duo avec l'application mobile
-                <a class="voir_plus" href="https://github.com/ratataque/Le_miel_et_les_abeilles" target="_blank">Voir plus</a>
+                <img class="image" src="./images/demineur_game.png"/>
+                Jeu demineur en C#
+                <a class="voir_plus" href="https://github.com/ratataque/Demineur" target="_blank">Voir plus</a>
             </div>
         </div>
 
         <div class="card">
             <div class="content">
                 <img class="bee" src="./images/sudoku.png"/> Sudoku
-                <br>
-                <br>
-                <img class="image" src="./images/fraise_disp.png"/>
-                <div class="gris">Application mobile qui vas de pair avec le site vitrine pour la vente de miel</div>
-                <a class="voir_plus" href="https://github.com/ratataque/App_miel" target="_blank">Voir plus</a>
+                <div class="tel_cont">
+                    <img class="tel" src="./images/app_vroom.png"/>
+                    Jeu mobile sudoku en java
+                </div>
+                <a class="voir_plus" href="https://github.com/ratataque/Sudoku" target="_blank">Voir plus</a>
             </div>
         </div>
     </div>
