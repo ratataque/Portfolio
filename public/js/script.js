@@ -84,7 +84,7 @@ function vers_linfini() {
 window.addEventListener('load', function () {
     // tortue_qui_vole(distance.acceuil)
     var page = new URLSearchParams(this.window.location.search).get('page');
-    page = page!==null?page:'acceuil'
+    page = Object.keys(distance).includes(page)?page:'acceuil'
     console.log(page)
     if (page === 'acceuil') {
         transi(this.event, page, onlaud=true)
