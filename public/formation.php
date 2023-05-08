@@ -1,3 +1,5 @@
+<?php if(!defined('INDEX_LOADED') || INDEX_LOADED != 1) header('Location: index.php'); ?>
+
 <div class="formation_cont">
     <a id="formation" class="titre_formation">Formation</a>
     <a class="formation_acceuil button" href="/" onclick="transi(event, 'acceuil');">Acceuil</a>

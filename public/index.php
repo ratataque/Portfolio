@@ -2,6 +2,7 @@
 session_start();
 $page = !isset($_GET["page"])?"":$_GET["page"];
 $page = htmlspecialchars($page);
+const INDEX_LOADED = 1;
 ?>
 
 <!DOCTYPE html>

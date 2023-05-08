@@ -1,3 +1,5 @@
+<?php if(!defined('INDEX_LOADED') || INDEX_LOADED != 1) header('Location: index.php'); ?>
+
 <div class="about_cont">
     <a id="about" class="titre_about">About</a>
     <div class="overlay_about">

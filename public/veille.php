@@ -1,3 +1,5 @@
+<?php if(!defined('INDEX_LOADED') || INDEX_LOADED != 1) header('Location: index.php'); ?>
+
 <div class="veille_cont">
     <a id="veille" class="titre_veille">Veille <br> Technologique</a>
     <a class="veille_acceuil button" href="/" onclick="transi(event, 'acceuil');">Acceuil</a>
