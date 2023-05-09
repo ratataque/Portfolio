@@ -2,7 +2,7 @@
 
 <div class="projet_cont">
     <a id="projet" class="titre_projet">Projets</a>
-    <a class="projet_acceuil button" href="/" onclick="transi(event, 'acceuil');">Acceuil</a>
+    <a class="projet_acceuil button" href="/" onclick="transi(event, 'acceuil');">Accueil</a>
 
 
     <div class="cards_cont">
@@ -33,7 +33,7 @@
                 <br>
                 <div class="tel_cont">
                     <img class="tel" src="./images/app_miel.png"/>
-                    Application mobile qui vas de pair avec le site vitrine pour la vente de miel
+                    Application mobile qui va de pair avec le site vitrine pour la vente de miel
                 </div>
                 <a class="voir_plus" href="https://github.com/ratataque/App_miel" target="_blank">Voir plus</a>
             </div>
@@ -43,7 +43,7 @@
             <div class="content">
                 <img class="bee" src="./images/advent_titre-removebg-preview.png"/>
                 <img class="image" src="./images/advent.png"/>
-                <div class="gris">Solution au 25 probleme realiser en python</div>
+                <div class="gris">Solution aux 25 problèmes réalisé en python</div>
                 <a class="voir_plus" href="https://github.com/ratataque/advent_of_code" target="_blank">Voir plus</a>
             </div>
         </div>
@@ -62,7 +62,7 @@
                 <img class="vroom" src="./images/Vroooom.png"/>
                 <div class="tel_cont">
                     <img class="tel" src="./images/app_vroom.png"/>
-                    Application mobile qui vas gérer la partie expertise des voiture lors de leurs retour
+                    Application mobile qui vas gérer la partie expertise des voitures lors de leurs retour
                 </div>
                 <a class="voir_plus" href="https://github.com/estrakio/app-Vroooom" target="_blank">Voir plus</a>
             </div>
@@ -88,7 +88,7 @@
                 <img class="bee" src="./images/demineur.png"/> Demineur
                 <br>
                 <br>
-                <img class="image" src="./images/demineur_game.png"/>
+                <img class="image" src="./images/demineur_game.png"/><br>
                 Jeu demineur en C#
                 <a class="voir_plus" href="https://github.com/ratataque/Demineur" target="_blank">Voir plus</a>
             </div>
@@ -98,7 +98,7 @@
             <div class="content">
                 <img class="bee" src="./images/sudoku.png"/> Sudoku
                 <div class="tel_cont">
-                    <img class="tel" src="./images/app_vroom.png"/>
+                    <img class="tel" src="./images/sudoku_app.png"/>
                     Jeu mobile sudoku en java
                 </div>
                 <a class="voir_plus" href="https://github.com/ratataque/Sudoku" target="_blank">Voir plus</a>
