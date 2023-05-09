@@ -79,7 +79,8 @@
     color: gray;
     margin-left: 2vw;
     width: 44vw;
-	font-size: 1.25vw;
+	font-size: 1.15vw;
+    line-height: 3.0vh;
 }
 
 .pre {

@@ -40,7 +40,7 @@ const INDEX_LOADED = 1;
 
     <img class="fleche" alt="fleche" src="./images/infini.png" onclick="vers_linfini()"/>
 
-    <a class="vers_formation button" href="/?page=formation" onclick="transi(event, 'formation');">Formation</a>
+    <a class="vers_formation button" href="/?page=formation" onclick="transi(event, 'formation');">Formations</a>
     <a class="vers_veille button" href="/?page=veille" onclick="transi(event, 'veille');">Veille Technologique</a>
 
 

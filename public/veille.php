@@ -8,7 +8,7 @@
         <div class="up">
             <div class="left">
                 <div class="titre_experience underline">Google Actualite :</div>
-                Les Actualitees google sont tres interessantes et efficace pour ce tenir au courant des sujet que nous apprecions
+                Les Actualitées google sont très intéressantes et efficaces pour se tenir au courant des sujets que nous apprécions
                 <img class="img_veille" src="./images/veille_google.png">
                 <img class="tel_veille" src="./images/veille.jpg">
             </div>
