@@ -11,7 +11,8 @@
                 <img src="./images/fraise_logo.png"/>
                 <img class="image" src="./images/fraise_disp.png"/>
                 <div class="gris">Gestionnaire de mot de passe en lignes axé sur la sécurité</div>
-                <a class="voir_plus" href="https://github.com/ratataque/fraise" target="_blank">Voir plus</a>
+                <a class="voir_plus tester" href="https://fraise.kwer.fr" target="_blank">Tester</a>
+                <a class="voir_plus fraise" href="https://github.com/ratataque/fraise" target="_blank">Voir plus</a>
             </div>
         </div>
 
