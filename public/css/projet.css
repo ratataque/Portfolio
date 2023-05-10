@@ -128,6 +128,13 @@
     align-items: center;
     text-decoration: none;
 }
+.content .voir_plus.fraise {
+    right: 1vw;
+    left: auto;
+}
+.content .voir_plus.tester {
+    left: 1vw;
+}
 
 .card:hover .content {
     transform: translateY(0px);
