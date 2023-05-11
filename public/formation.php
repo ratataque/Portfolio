@@ -51,7 +51,7 @@
                         taches récurrentes
                     </div>
                     <div class="div3">
-                        <span style="color: darkorange;">-</span> Chargée de communicaiton et résolution 
+                        <span style="color: darkorange;">-</span> Chargée de communication et résolution 
                         des problèmes 
                     </div>
                     <div class="div4"> avec les prestataires informatiques</div>

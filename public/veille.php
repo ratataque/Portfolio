@@ -7,8 +7,8 @@
     <div class="veille_content">
         <div class="up">
             <div class="left">
-                <div class="titre_experience underline">Google Actualite :</div>
-                Les Actualitées google sont très intéressantes et efficaces pour se tenir au courant des sujets que nous apprécions
+                <div class="titre_experience underline">Google Actualités :</div>
+                Les Actualités google sont très intéressantes et efficaces pour se tenir au courant des sujets que nous apprécions
                 <img class="img_veille" src="./images/veille_google.png">
                 <img class="tel_veille" src="./images/veille.jpg">
             </div>
@@ -27,7 +27,7 @@
             </div>
         </div>
 
-        <div class="titre_experience underline">Createurs de contenu :</div>
+        <div class="titre_experience underline">Créateurs de contenu :</div>
         <div class="ytb_cont">
             <a href="https://www.youtube.com/@LiveOverflow" target="_blank"><img src="./images/liveoverflow.png"></a>
             <a href="https://www.youtube.com/@DistroTube" target="_blank"><img src="./images/dt.png"></a>  

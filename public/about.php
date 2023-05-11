@@ -13,7 +13,7 @@
         <div class="p_presentation">
             <span style="color: darkorange;">-</span> Je m'appelle Rimmely Ewan j'ai 21 ans. Je suis actuellement en
             deuxième d'un BTS SIO que j'effectue à Strasbourg.
-            <br><span style="color: darkorange;">-</span> J'aimerai poursuivre ma formation vers un diplôme d'ingénieur.
+            <br><span style="color: darkorange;">-</span> J'aimerais poursuivre ma formation vers un diplôme d'ingénieur.
         </div>
 
 
@@ -21,7 +21,7 @@
         <div class="p_presentation">
             Toutes les activités que j'apprécie possèdent plusieurs points communs :
             <div class="pre">
-                <span style="color: darkorange;">-</span> sont difficile à apprendre au début
+                <span style="color: darkorange;">-</span> sont difficiles à apprendre au début
                 <span style="color: darkorange;">-</span> mais une fois maitrisé le potentiel s'en libère
                 <span style="color: darkorange;">-</span> notion de rapidité
             </div>
